@@ -126,6 +126,7 @@ input[type='search'] {
 
 .options-1 {
     grid-template-rows: repeat(6,25px);
+    margin-top: -100px;
     gap: 15px;
 }
 
@@ -138,14 +139,51 @@ input[type='search'] {
 .content{
     background-color: red;
     display: grid;
-    grid-template-columns: repeat(3, 250px) ;
-    grid-template-rows: repeat(3,250px);
-    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr ;
     gap: 15px;
 }
 
+.projects {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 25px;
+  gap: 15px;
+}
+
+.projects h3 {
+  position: absolute;
+  top: -20px;
+}
 .content h3 {
   font-size: 25px;
 }
+
+.info {
+  display: grid;
+  gap: 15px;
+}
+
+.announcements {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.announcements p{
+  color: black;
+  font-size: 15px;
+}
+
+.trending {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.trending p{
+  color: black;
+  font-size: 15px;
+}
+
+
 
 
