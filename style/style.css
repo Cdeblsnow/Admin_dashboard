@@ -48,8 +48,10 @@
 
 .header{
     display: grid;
+    position: relative;
     grid-column: 2/3;
-    background-color: aqua;
+    background-color: white;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
 }
 
 .photo .icon{
@@ -109,6 +111,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .header{
   display: grid;
+  height: 220px;
   grid-template-rows: repeat(2,1fr);
   grid-auto-flow: column;
   justify-content: space-between;
@@ -140,10 +143,32 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .admin-hi img {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
 }
 
+.admin-picture {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.admin-picture img{
+  height: 70px;
+  width: 70px;
+}
+
+.admin-picture p {
+  color: black;
+  font-size: 30px;
+}
+
+.notification {
+  height: 40px;
+  width: 40px;
+  margin-right: 35px;
+
+}
 
 
 .header button{
@@ -160,7 +185,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .sidebar {
     display: grid;
     grid-row: 1/3;
-    background-color: blueviolet;
+    background-color: rgba(138, 19, 250, 0.548);
     align-items: start;
     
 }
@@ -187,7 +212,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .content{
-    background-color: red;
+    background-color: rgb(192, 186, 186);
     display: grid;
     grid-template-columns: 3fr 1fr ;
     gap: 15px;
@@ -199,6 +224,10 @@ input[type="search"]::-webkit-search-cancel-button {
   grid-template-columns: repeat(2,1fr);
   margin-top: 25px;
   gap: 15px;
+}
+
+h3 {
+  color: black;
 }
 
 .projects h3 {
@@ -228,6 +257,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .announcements .title {
   color: black;
   font-size: 20px;
+}
+
+.announcement-content{
+  padding: 10px;
+  border-bottom: 2px solid rgba(128, 128, 128, .2);
 }
 
 .trending {
