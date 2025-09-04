@@ -31,8 +31,9 @@
 
   .card {
     border-radius: 10px;
-    box-shadow: 3px 3px 0 0 black;
-    /* add transparency */
+    border-left: 8px #DE1F2F solid;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.466);
+    position: relative;
   }
   
   .card p {
@@ -233,7 +234,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .content{
-    background-color: rgb(222, 60, 31);
+    background-color: rgba(222, 60, 31, 0.6);
     display: grid;
     grid-template-columns: 3fr 1fr ;
     gap: 15px;
@@ -249,7 +250,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 h3 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .projects h3 {
