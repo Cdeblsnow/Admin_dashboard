@@ -35,6 +35,44 @@
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.466);
     position: relative;
   }
+
+  .new-announcement{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #n-announcement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .new-announcement form{
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 1 0; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .new-announcement form div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .new-announcement label{
+    color: black;
+    font-size: 15px;
+  }
+
+  .new-announcement textarea{
+    resize: none;
+    height: 200px;
+    width: 200px;
+  }
   
   .card p {
     color: black;
@@ -89,6 +127,7 @@
   align-items: center;
 }
 
+
 input[type="search"] {
     width: 600px;
     height: 40px;
@@ -99,19 +138,29 @@ input[type="search"] {
     -webkit-appearance: none; 
     -moz-appearance: none;   
     appearance: none;
+    color: white;
+    font-size: 20px;
+}
+
+input[type="search"]:hover{
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+input[type="search"]:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+input[type="search"]:focus::placeholder{
+  color: transparent;
 }
 
 input[type="search"]::placeholder {
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   opacity: 1;
 }
 
-input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-  appearance: none;
-  display: none; 
-}
 
 .magnify{
   fill: white;
@@ -181,6 +230,27 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: #DE69B9;
 }
 
+.header button{
+  appearance: none;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  transition-duration: .2s;
+}
+
+.header-button:hover {
+  background-color: #de69b98e;
+  box-shadow: 2px 2px 6px 2px black;
+}
+
+.header-button:active{
+  background-color: #de69b98e;
+  box-shadow: 2px 2px 6px 2px black;
+  transform: translateY(4px);
+}
+
 
 .notification {
   height: 40px;
@@ -190,17 +260,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 }
 
-
-.header button{
-  appearance: none;
-  font-size: 20px;
-  height: 50px;
-  width: 100px;
-  padding: 10px;
-  border-radius: 25px;
-}
-
-/* add on focus effects */
 
 .sidebar {
     display: grid;
